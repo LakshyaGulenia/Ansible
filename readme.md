@@ -39,7 +39,8 @@ sudo apt update
 sudo apt install python3-pip
 sudo apt install ansible
 
-
+### 🧱 copy pem key to remote from local
+scp -i ansible-key.pem ansible-key.pem ubuntu@13.126.156.228:/home/ubuntu/
 
 # SSH Access Setup for EC2 and Azure VMs
 
