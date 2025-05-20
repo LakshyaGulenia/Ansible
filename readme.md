@@ -115,3 +115,5 @@ used to copy file from master to slave
 ansible all -i inventory.ini -m copy -a "src=/home/ubuntu/file.txt dest=/home/ubuntu/file.txt mode=0644 owner=ubuntu group=ubuntu"
 used to update linux
 ansible all -i inventory.ini -m apt -a "update_cache=yes" --become --- used become to get root priv
+used to install dockr.io from ad ho
+ansible all -i inventory.ini -m apt -a "name=docker.io state=present" --become
