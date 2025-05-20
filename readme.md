@@ -111,3 +111,5 @@ used to create directory
 ansible all -i inventory.ini -m file -a"dest=/home/ubuntu/new mode=755 owner=ubuntu group=ubuntu state=directory"
 used to del directory
 ansible all -i inventory.ini -m file -a"dest=/home/ubuntu/new state=absent"
+used to copy file from master to slave
+ansible all -i inventory.ini -m copy -a "src=/home/ubuntu/file.txt dest=/home/ubuntu/file.txt mode=0644 owner=ubuntu group=ubuntu"
