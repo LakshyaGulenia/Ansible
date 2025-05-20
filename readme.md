@@ -107,3 +107,7 @@ Always secure your private keys and limit password login when possible.
 Ad Hoc Commands-
 used to create empty file--
 ansible all -i inventory.ini -m file -a "dest=/home/ubuntu/adhoc.txt mode=0644 owner=ubuntu group=ubuntu state=touch"
+used to create directory
+ansible all -i inventory.ini -m file -a"dest=/home/ubuntu/new mode=755 owner=ubuntu group=ubuntu state=directory"
+used to del directory
+ansible all -i inventory.ini -m file -a"dest=/home/ubuntu/new state=absent"
