@@ -113,3 +113,5 @@ used to del directory
 ansible all -i inventory.ini -m file -a"dest=/home/ubuntu/new state=absent"
 used to copy file from master to slave
 ansible all -i inventory.ini -m copy -a "src=/home/ubuntu/file.txt dest=/home/ubuntu/file.txt mode=0644 owner=ubuntu group=ubuntu"
+used to update linux
+ansible all -i inventory.ini -m apt -a "update_cache=yes" --become --- used become to get root priv
