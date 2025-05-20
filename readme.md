@@ -101,3 +101,9 @@ For EC2, PEM file is required initially to authenticate.
 For Azure VMs, password authentication must be enabled explicitly.
 
 Always secure your private keys and limit password login when possible.
+
+
+
+Ad Hoc Commands-
+used to create empty file--
+ansible all -i inventory.ini -m file -a "dest=/home/ubuntu/adhoc.txt mode=0644 owner=ubuntu group=ubuntu state=touch"
